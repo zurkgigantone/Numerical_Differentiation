@@ -7,3 +7,247 @@ table {
     border: 1px solid black;
   }
   
+  html {
+    background-image: url(./images/calculus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+*body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.faq {
+    position: absolute;
+    top: 10%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    font-size: 2rem;
+    color: rgb(248, 251, 254);
+    font-weight: bolder;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+}
+.faq:hover {
+    scale: 1.1;   
+}
+.faq:active {
+    border-bottom:3px solid gray ;
+    color: rgb(204, 199, 156);
+    transition: none;
+}
+.logo {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    z-index: 1;
+}
+.flex-section {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.84);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 70vh;
+    background-color: white;
+    border-radius: 10px;
+
+}
+.left-side {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.right-side {
+    flex-basis: 50%;
+}
+.background {
+    height: 70vh;
+}
+h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #f0a81a;
+    margin: 0;
+    margin-top: 10%;
+    text-align: center;
+}
+.diff {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+p {
+    text-align: center;
+    margin: 0 15%;
+     color: #f0a81a;
+     margin-top: 7%;
+}
+.Start-button {
+    padding: 20px 80px;
+    font-size: 2rem;
+    background-color:#f0a81a;
+    color: rgb(247, 244, 239);
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10%;
+}
+.Start-button:active {
+    color: #f0a81a;
+    border: 2px solid #f0a81a;
+    background-color: transparent;
+}
+
+/* css for modal */
+
+.log-in-pop-up {
+    color: aliceblue;
+    position: absolute; 
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    opacity:0;
+    transition: top 1000ms ease-in-out;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(./images/calculus.png);
+}
+.log-in-pop-up.active {
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    height: 100%;
+    z-index: 5;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;  
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px;
+    width: 60vw;
+    margin: 5% auto;
+    height: 80%;
+    /* margin-top: 100px; */
+    text-align: center;
+    background-color: rgb(42, 112, 34);   
+}
+.derivativeForm {
+    margin: 2% 8%;
+    display: block;
+}
+h1 {
+    border: 4px solid #b27d13;
+    margin: 0;
+    padding: 20px 0;
+    background-color:rgba(18, 47, 14, 0.627);
+    border-radius: 10px 10px 0 0;
+}
+.logo-login {
+    position: absolute;
+    top:60%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+input {
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+}
+.placeH,
+.placeHL,
+.placeHLL {
+    width: 97%;
+    margin-top: 20px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(18, 47, 14, 0.627);
+}
+.placeH-w {
+    margin-left: 10px;
+}
+.placeHL,
+.placeHLL {
+    background-color: #d79d29;
+    color: rgb(250, 255, 195);
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+.placeHL:hover,
+.placeHLL:hover {
+    background-color: #b27d13;
+}
+.placeHL:active,
+.placeHLL:active {
+    background-color: whitesmoke;
+    color:#b27d13;
+    transition: none;
+}
+.placeHLL {
+    width: 20%;
+}
+.flex-row {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.flex-row-last {
+    display: flex;
+    justify-content: space-evenly;
+}
+.flex-row-method {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.flex-row-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#methodInput {
+  width: 150px;
+  height: 25px;
+}
+
+table {
+    
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 8px;
+    border: 1px solid black;
+  }
+  .table-row {
+    display: flex;
+    justify-content: space-around;
+  }
+  tr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  th {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  td {
+    flex-basis: 40%;
+  }

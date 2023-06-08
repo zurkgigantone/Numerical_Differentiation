@@ -1,3 +1,7 @@
+document.getElementById("Start-button").addEventListener("click", function() {
+  document.getElementsByClassName("log-in-pop-up")[0].classList.add("active");
+  });
+
 function computeFiniteDifferenceDerivative(f, xi, h, order, method) {
     const parser = math.parser();
     parser.evaluate('f(x) = ' + f);
@@ -64,13 +68,16 @@ function computeFiniteDifferenceDerivative(f, xi, h, order, method) {
   
   function clearTable() {
     const resultsTable = document.getElementById('resultsTable');
-    resultsTable.innerHTML = `
-      <tr>
-        <th>Derivative</th>
-        <th>Value</th>
-      </tr>
-    `;
+    const rowCount = resultsTable.rows.length;
+  
+    // Start from the last row and remove each row one by one
+    for (let i = rowCount - 1; i > 0; i--) {
+      resultsTable.deleteRow(i);
+    }
   }
+  
+  
+
   
   function getDerivativeName(order) {
     return order === 1 ? 'First Derivative' :
