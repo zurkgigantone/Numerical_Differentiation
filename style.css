@@ -1,0 +1,215 @@
+
+ html {
+    background-image: url(./images/calculus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+*body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.faq {
+    position: absolute;
+    top: 10%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    font-size: 2rem;
+    color: rgb(248, 251, 254);
+    font-weight: bolder;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+}
+.faq:hover {
+    scale: 1.1;   
+}
+.faq:active {
+    border-bottom:3px solid gray ;
+    color: rgb(204, 199, 156);
+    transition: none;
+}
+.logo {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    z-index: 1;
+}
+.flex-section {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.84);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 70vh;
+    background-color: white;
+    border-radius: 10px;
+
+}
+.left-side {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.right-side {
+    flex-basis: 50%;
+}
+.background {
+    height: 70vh;
+}
+h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #f0a81a;
+    margin: 0;
+    margin-top: 10%;
+    text-align: center;
+}
+.diff {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+p {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 15%;
+     color: #f0a81a;
+     margin-top: 7%;
+}
+.Start-button {
+    padding: 20px 80px;
+    font-size: 2rem;
+    background-color:#f0a81a;
+    color: rgb(247, 244, 239);
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10%;
+}
+.Start-button:active {
+    color: #f0a81a;
+    border: 2px solid #f0a81a;
+    background-color: transparent;
+}
+
+/* css for modal */
+
+.log-in-pop-up {
+    position: absolute; 
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    opacity:0;
+    transition: top 1000ms ease-in-out;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(./images/calculus.png);
+    /* background-color: rgba(255, 255, 255, 0.97);  */
+    /* background-color: rgba(207, 233, 243, 0.842);  */
+}
+.log-in-pop-up.active {
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    height: 100%;
+    z-index: 5;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;  
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px;
+    background-color: rgb(42, 112, 34);
+    margin: 5% 35%;
+    height: 50vh;
+    margin-top: 200px;
+    text-align: center;
+}
+.logo-login {
+    position: absolute;
+    top:60%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+}
+
+/* .button-login,
+.button-create-account {
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: rgb(0, 94, 255);
+    color: whitesmoke;
+    border: none;
+    margin-top: 30px;
+    width: 85%;
+    align-self: center;
+    text-align: center;
+    margin:2% 0;
+}  
+.button-create-account {
+    background-color: rgb(10, 193, 44) !important;
+} */
+
+@media only screen and (max-width: 900px) {
+    .form-control-login {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .button-login  {
+        margin-top: 40px;
+        padding: 8px;
+    }
+    .login-container {
+        width: 45vw;
+        margin-left: 27%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .form-control-login {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .button-login  {
+        margin-top: 40px;
+        padding: 8px;
+    }
+    .login-container {
+        height: 60vh;
+        width: 95vw;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .section .active{
+        position: fixed;
+    }
+    .button-login,
+    .button-create-account{
+        margin-top: 40px;
+        padding: 15px 0;
+    }
+    .form-control-login {
+        padding: 15px;
+    }
+}
+table {
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 8px;
+    border: 1px solid black;
+  }

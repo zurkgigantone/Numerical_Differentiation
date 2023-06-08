@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Finite-Difference Formulas</title>
+  <script src="math.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Compute Derivatives using Finite-Difference Formulas</h1>
+  <form id="derivativeForm" onsubmit="event.preventDefault()">
+    <label for="functionInput">Function f(x):</label>
+    <input type="text" id="functionInput" required><br><br>
+    
+    <label for="xInput">Value of x (xi):</label>
+    <input type="number" id="xInput" step="any" required><br><br>
+    
+    <label for="hInput">Step size (h):</label>
+    <input type="number" id="hInput" step="any" required><br><br>
+    
+    <label for="methodInput">Finite Difference Method:</label>
+    <select id="methodInput" onchange="clearTable()">
+      <option value="forward">Forward</option>
+      <option value="backward">Backward</option>
+      <option value="centered">Centered</option>
+    </select><br><br>
+    
+    <input type="button" value="Calculate First Derivative" onclick="computeDerivative(1)">
+    <input type="button" value="Calculate Second Derivative" onclick="computeDerivative(2)">
+    <input type="button" value="Calculate Third Derivative" onclick="computeDerivative(3)">
+    <input type="button" value="Calculate Fourth Derivative" onclick="computeDerivative(4)">
+    <input type="button" value="Calculate All Derivatives" onclick="computeAllDerivatives()">
+    <input type="button" value="Clear" onclick="clearTable()">
+  </form>
+
+  <table id="resultsTable">
+    <tr>
+      <th>Derivative</th>
+      <th>Value</th>
+    </tr>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
